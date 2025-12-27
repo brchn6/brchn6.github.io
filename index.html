@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bar Cohen — Bioinformatics & Simulation</title>
+
+  <style>
+    :root {
+      --bg: #0f1220;
+      --fg: #eaeaf0;
+      --muted: #b6b6c8;
+      --accent: #6ae3c1;
+      --card: #181b2e;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: linear-gradient(180deg, #0f1220, #0a0c17);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.2em;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    .tags {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background: #1f2340;
+      color: var(--muted);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    section {
+      margin-top: 56px;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 24px;
+      border-top: 1px solid #262a4a;
+      color: var(--muted);
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Bar Cohen</h1>
+      <p>
+        🧬 Bioinformatics & computational biology at the
+        <strong>Weizmann Institute of Science</strong> (Pilpel Lab).
+        I build simulations of evolution, mating structure, and genomic dynamics —
+        and occasionally escape into music informatics and open-source tooling.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Bioinformatics</span>
+        <span class="tag">Population Genetics</span>
+        <span class="tag">Simulation</span>
+        <span class="tag">Python</span>
+        <span class="tag">VCF / PLINK / IBD</span>
+        <span class="tag">Music Informatics</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Selected Projects</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Evolutionary Learning Under Stress Using GFP Feedback</h3>
+          <p>
+            Machine-learning–driven analysis of evolutionary adaptation using
+            GFP feedback signals under environmental stress.
+          </p>
+          <a href="https://github.com/brchn6/Evolutionary_Learning_Under_Stress_Using_GFP_Feedback">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Sexy Yeast</h3>
+          <p>
+            Simulation of evolution in a sexually reproducing yeast culture,
+            exploring mating, selection, and population-level dynamics.
+          </p>
+          <a href="https://github.com/brchn6/sexy_yeast">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Cloud Buccaneer</h3>
+          <p>
+            Python tools for working with cloud-based workflows and automation,
+            designed for research environments.
+          </p>
+          <a href="https://github.com/brchn6/Clouduccaneer">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>SoundGraph-Relate</h3>
+          <p>
+            Music informatics project exploring relationships and structure
+            in sound using graph-based representations.
+          </p>
+          <a href="https://github.com/brchn6/soundgraph-relate">
+            View on GitHub →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Activity</h2>
+      <p>
+        Actively contributing to open-source and research codebases —
+        with consistent development over the last year across simulations,
+        analysis pipelines, and exploratory notebooks.
+      </p>
+    </section>
+
+    <footer>
+      <span>GitHub: <a href="https://github.com/brchn6">brchn6</a></span>
+      <span>Email: bar.cohen [at] weizmann.ac.il</span>
+      <span>Based at Weizmann Institute of Science</span>
+    </footer>
+
+  </div>
+</body>
+</html>
